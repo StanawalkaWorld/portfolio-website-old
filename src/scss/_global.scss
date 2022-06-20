@@ -6,6 +6,8 @@ $accent-color: #03045e;
 $secondary-color: #0077b6;
 $background-color: #023e8a;
 
+$text-color: #eee;
+
 @mixin hover_bg($color) {
     background: $accent-color;
 
