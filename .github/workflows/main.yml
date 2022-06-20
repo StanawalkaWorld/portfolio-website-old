@@ -39,6 +39,8 @@ jobs:
               # uses: crazy-max/ghaction-github-pages@eb08c35b9fab86751edfff4e55cd5cde35ff0e52
               uses: crazy-max/ghaction-github-pages@v3.0.0
               with:
+                  # Git domain (default github.com)
+                  domain: github.com
                   # GitHub repository where assets will be deployed (default $GITHUB_REPOSITORY)
                   repo: StanawalkaWorld/stanawalkaworld.github.io
                   # Git branch where assets will be deployed
