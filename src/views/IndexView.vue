@@ -1,11 +1,4 @@
 <script setup>
-    import { ref } from 'vue';
-
-    const testval = ref(0);
-
-    function onclk() {
-        testval.value++;
-    }
 </script>
 
 <template>

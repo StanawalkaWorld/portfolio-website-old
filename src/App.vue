@@ -1,17 +1,16 @@
 <script setup>
+import NavBar from './components/NavBar.vue';
+import SiteFooter from './components/SiteFooter.vue';
     
 </script>
 
 <template>
-    <router-view>
-
-    </router-view>
+    <NavBar />
+    <div class="content">
+        <router-view></router-view>
+    </div>
+    <SiteFooter />
 </template>
 
 <style lang="scss">
-// html, body, #app {
-//     width: 100%;
-//     height: 100vh;
-//     margin: 0;
-// }
 </style>
