@@ -1,0 +1,17 @@
+$small-margin: 0.5em;
+$standard-margin: 1em;
+$big-margin: 1.5em;
+
+$accent-color: #03045e;
+$secondary-color: #0077b6;
+$background-color: #023e8a;
+
+@mixin hover_bg($color) {
+    background: $accent-color;
+
+    &:hover {
+        background: darken($accent-color, 0.2);
+    }
+}
+
+$standard-transition_length: 0.2s;
