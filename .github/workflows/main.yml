@@ -4,64 +4,67 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
-  push:
-    branches: [ "master" ]
+    # Triggers the workflow on push or pull request events but only for the "master" branch
+    push:
+        branches: ["master"]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    # This workflow contains a single job called "build"
+    build:
+        # The type of runner that the job will run on
+        runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+        # Steps represent a sequence of tasks that will be executed as part of the job
+        steps:
+            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            - uses: actions/checkout@v3
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.3.0
-        with:
-          node-version: 16.x
-          
-      # init npm for Continous integration
-      - run: npm ci
-      
-      - name: Build Vue.js 3 App
-        run: npm run build
-        
-      - name: GitHub Pages
-        # You may pin to the exact commit or the version.
-        # uses: crazy-max/ghaction-github-pages@eb08c35b9fab86751edfff4e55cd5cde35ff0e52
-        uses: crazy-max/ghaction-github-pages@v3.0.0
-        with:
-          # Git domain (default github.com)
-          domain: stanawalkaworld.github.io
-          # GitHub repository where assets will be deployed (default $GITHUB_REPOSITORY)
-          repo: StanawalkaWorld/stanawalkaworld.github.io
-          # Git branch where assets will be deployed
-          target_branch: master
-          # Create incremental commit instead of doing push force
-          keep_history: false
-          # Allow an empty commit to be created
-          allow_empty_commit: true
-          # Build directory to deploy
-          build_dir: dist/
-          # Whether to treat build_dir as an absolute path
-          absolute_build_dir: false
-          # If enabled, the content of symbolic links will be copied
-          follow_symlinks: false
-          # The committer name and email address
-          committer: Dawid Barański (stanawalkaworld@gmail.com)
-          # The author name and email address
-          author: Dawid Barański (stanwalkaworld@gmail.com)
-          # Commit message
-          commit_message: Website updated
-          # If enabled, nothing will be pushed
-          dry_run: false
-          # Enable verbose output
-          verbose: true
+            - name: Setup Node.js environment
+              uses: actions/setup-node@v3.3.0
+              with:
+                  node-version: 16.x
+
+            # init npm for Continous integration
+            - run: npm ci
+
+            - name: Build Vue.js 3 App
+              run: npm run build
+
+            - name: GitHub Pages
+              # You may pin to the exact commit or the version.
+              # uses: crazy-max/ghaction-github-pages@eb08c35b9fab86751edfff4e55cd5cde35ff0e52
+              uses: crazy-max/ghaction-github-pages@v3.0.0
+              with:
+                  # Git domain (default github.com)
+                  domain: stanawalkaworld.github.io
+                  # GitHub repository where assets will be deployed (default $GITHUB_REPOSITORY)
+                  repo: StanawalkaWorld/stanawalkaworld.github.io
+                  # Git branch where assets will be deployed
+                  target_branch: master
+                  # Create incremental commit instead of doing push force
+                  keep_history: false
+                  # Allow an empty commit to be created
+                  allow_empty_commit: true
+                  # Build directory to deploy
+                  build_dir: dist/
+                  # Whether to treat build_dir as an absolute path
+                  absolute_build_dir: false
+                  # If enabled, the content of symbolic links will be copied
+                  follow_symlinks: false
+                  # The committer name and email address
+                  committer: Dawid Barański (stanawalkaworld@gmail.com)
+                  # The author name and email address
+                  author: Dawid Barański (stanwalkaworld@gmail.com)
+                  # Commit message
+                  commit_message: Website updated
+                  # If enabled, nothing will be pushed
+                  dry_run: false
+                  # Enable verbose output
+                  verbose: true
+
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
