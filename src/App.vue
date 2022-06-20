@@ -13,4 +13,13 @@ import SiteFooter from './components/SiteFooter.vue';
 </template>
 
 <style lang="scss">
+body {
+    background: $background-color;
+    color: $text-color;
+}
+
+.content {
+    margin: $big-margin auto;
+    width: 80%;
+}
 </style>
