@@ -9,10 +9,10 @@ $background-color: #023e8a;
 $text-color: #eee;
 
 @mixin hover_bg($color) {
-    background: $accent-color;
+    background: $color;
 
     &:hover {
-        background: darken($accent-color, 0.2);
+        background: darken($color, 0.2);
     }
 }
 
