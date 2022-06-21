@@ -7,8 +7,6 @@ on:
     # Triggers the workflow on push or pull request events but only for the "master" branch
     push:
         branches: ["master"]
-    pull_request:
-        branches: ["master"]
 
     # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
@@ -60,7 +58,7 @@ jobs:
                   # The committer name and email address
                   committer: Dawid Barański (stanawalkaworld@gmail.com)
                   # The author name and email address
-                  author: Dawid Barański (stanawalkaworld@gmail.com)
+                  author: Dawid Barański (stanwalkaworld@gmail.com)
                   # Commit message
                   commit_message: Website updated
                   # If enabled, nothing will be pushed
