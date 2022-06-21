@@ -1,5 +1,7 @@
 <script setup>
 import Logo from '../assets/Logo.png';
+
+import OutlineButton from './UIElements/OutlineButton.vue';
 import { useLanguageStore } from '../store/lang';
 
 const lang = useLanguageStore();

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<!-- TODO: Profile image and a little description about myself -->
+<!-- TODO: Add contact information (somehow find a way to have a contact form) -->
 </template>
 
 <style lang="scss">
