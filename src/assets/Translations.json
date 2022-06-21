@@ -1,0 +1,16 @@
+{
+    "skeleton": {
+        "navlink.home": {
+            "en": "Home",
+            "pl": "Start"
+        },
+        "navlink.contact": {
+            "en": "Contact",
+            "pl": "Kontakt"
+        },
+        "navlink.about": {
+            "en": "About me",
+            "pl": "O mnie"
+        }
+    }
+}

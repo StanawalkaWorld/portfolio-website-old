@@ -1,10 +1,14 @@
 <script setup>
+import { useLanguageStore } from '../store/lang';
+
+const lang = useLanguageStore();
 </script>
 
 <template>
     <!-- TODO: Introduction to who I am and stuff -->
     <h1>Website currently under construction.</h1>
     <p>You can contact me at: <a class="mail" href="mailto:dawid.baranski.ti@gmail.com">dawid.baranski.ti@gmail.com</a></p>
+    <button @click="lang.switchLanguage">Switch language</button>
 </template>
 
 <style lang="scss" scoped>

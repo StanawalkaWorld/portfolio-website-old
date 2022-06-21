@@ -10,6 +10,8 @@ $background-color: #000126;
 
 $text-color: #eee;
 
+$standard-transition_length: 0.2s;
+
 @mixin hover_bg($color) {
     background: $color;
 
@@ -18,4 +20,6 @@ $text-color: #eee;
     }
 }
 
-$standard-transition_length: 0.2s;
+h1 {
+    margin: 0;
+}
