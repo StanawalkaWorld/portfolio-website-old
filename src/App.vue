@@ -7,7 +7,8 @@ import SiteFooter from './components/SiteFooter.vue';
 <template>
     <NavBar />
     <div class="content">
-        <router-view></router-view>
+        <!-- TODO: Add transition effect -->
+        <router-view></router-view> 
     </div>
     <SiteFooter />
 </template>

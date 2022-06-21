@@ -10,6 +10,7 @@ import Logo from '../assets/Logo.png';
         </router-link>
         
         <div class="navlinklist">
+            <!-- TODO: Use component based links for better look and active route styling -->
             <router-link class="navlink" to="/">Home</router-link>
             <router-link class="navlink" to="/projects">Projects</router-link>
             <router-link class="navlink" to="/about">About me</router-link>
