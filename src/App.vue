@@ -16,6 +16,7 @@ import SiteFooter from './components/SiteFooter.vue';
 body {
     background: $background-color;
     color: $text-color;
+    font-family: 'Anek Latin', sans-serif;
 }
 
 .content {
