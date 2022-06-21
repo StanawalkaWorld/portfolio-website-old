@@ -14,7 +14,7 @@ $text-color: #eee;
     background: $color;
 
     &:hover {
-        background: darken($color, 0.2);
+        background: lighten($color, 0.2);
     }
 }
 

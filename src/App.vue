@@ -13,6 +13,14 @@ import SiteFooter from './components/SiteFooter.vue';
 </template>
 
 <style lang="scss">
+* {
+    box-sizing: border-box;
+}
+a, a:active, a:visited {
+    color: $text-color;
+    text-decoration: none;
+}
+
 body {
     background: $background-color;
     color: $text-color;
