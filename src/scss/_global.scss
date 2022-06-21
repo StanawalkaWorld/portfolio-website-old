@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;400&display=swap');
+
+$small-margin: 0.5em;
+$standard-margin: 1em;
+$big-margin: 1.5em;
+
+$accent-color: #0077b6;
+$secondary-color: #023e8a;
+$background-color: #000126;
+
+$text-color: #eee;
+
+@mixin hover_bg($color) {
+    background: $color;
+
+    &:hover {
+        background: lighten($color, 0.2);
+    }
+}
+
+$standard-transition_length: 0.2s;

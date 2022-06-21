@@ -1,17 +1,34 @@
 <script setup>
+import NavBar from './components/NavBar.vue';
+import SiteFooter from './components/SiteFooter.vue';
     
 </script>
 
 <template>
-    <router-view>
-
-    </router-view>
+    <NavBar />
+    <div class="content">
+        <router-view></router-view>
+    </div>
+    <SiteFooter />
 </template>
 
 <style lang="scss">
-// html, body, #app {
-//     width: 100%;
-//     height: 100vh;
-//     margin: 0;
-// }
+* {
+    box-sizing: border-box;
+}
+a, a:active, a:visited {
+    color: $text-color;
+    text-decoration: none;
+}
+
+body {
+    background: $background-color;
+    color: $text-color;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.content {
+    margin: $big-margin auto;
+    width: 80%;
+}
 </style>
