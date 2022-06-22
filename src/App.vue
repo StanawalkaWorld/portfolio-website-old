@@ -31,5 +31,10 @@ body {
 .content {
     margin: $big-margin auto;
     width: 80%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: $small-margin;
+    }
 }
 </style>

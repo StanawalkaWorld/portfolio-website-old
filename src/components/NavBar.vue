@@ -33,7 +33,9 @@ const lang = useLanguageStore();
     padding: $standard-margin;
     display: flex;
     align-items: center;
+    justify-content: center;
 
+    background: $secondary-color;
     .logo-container {
         display: flex;
         align-items: center;
@@ -45,7 +47,14 @@ const lang = useLanguageStore();
 
     .navlinklist {
         .navlink {
-            margin-right: $standard-margin;
+            display: block;
+            margin-right: $big-margin;
+            padding: $standard-margin;
+            border-radius: $small-margin;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+            }
         }
     }
 }
@@ -54,5 +63,28 @@ const lang = useLanguageStore();
 }
 .logo-caption {
     margin-right: $big-margin;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+
+        * {
+            margin: 0;
+        }
+
+        .navlinklist {
+            display: block;
+            width: 100%;
+            margin-top: $small-margin;
+            // flex-direction: column;
+
+            .navlink {
+                width: 100%;
+                border-radius: 0;
+                text-align: center;
+            }
+        }
+    }
 }
 </style>
