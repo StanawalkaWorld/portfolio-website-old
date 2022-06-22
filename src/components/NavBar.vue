@@ -1,7 +1,6 @@
 <script setup>
 import Logo from '../assets/Logo.png';
 
-import OutlineButton from './UIElements/OutlineButton.vue';
 import { useLanguageStore } from '../store/lang';
 
 const lang = useLanguageStore();
@@ -10,22 +9,21 @@ const lang = useLanguageStore();
 
 <template>
     <nav class="navbar">
-        <router-link to="/" class="logo-container">
+        <a href="#" class="logo-container">
             <img :src="Logo" alt="✔" class="logo">
             <h1 class="logo-caption">Dawid Barański</h1>
-        </router-link>
+        </a>
         
         <div class="navlinklist">
-            <!-- TODO: Use component based links for better look and active route styling -->
-            <router-link class="navlink" to="/">
+            <a class="navlink" href="#">
                 {{ lang.translationFor("navlink.home") }}
-            </router-link>
-            <router-link class="navlink" to="/about">
+            </a>
+            <a class="navlink" href="#about">
                 {{ lang.translationFor("navlink.about") }}
-            </router-link>
-            <router-link class="navlink" to="/contact">
+            </a>
+            <a class="navlink" href="#contact">
                 {{ lang.translationFor("navlink.contact") }}
-            </router-link>
+            </a>
         </div>
     </nav>
 </template>
@@ -43,6 +41,12 @@ const lang = useLanguageStore();
 
     * {
         margin-right: $small-margin;
+    }
+
+    .navlinklist {
+        .navlink {
+            margin-right: $standard-margin;
+        }
     }
 }
 .logo {
