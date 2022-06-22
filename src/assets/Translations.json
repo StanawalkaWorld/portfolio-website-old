@@ -1,0 +1,30 @@
+{
+    "skeleton": {
+        "navlink.home": {
+            "en": "Home",
+            "pl": "Start"
+        },
+        "navlink.contact": {
+            "en": "Contact",
+            "pl": "Kontakt"
+        },
+        "navlink.about": {
+            "en": "About me",
+            "pl": "O mnie"
+        }
+    },
+    "content": {
+        "testing.header": {
+            "en": "Website currently under construction.",
+            "pl": "Strona aktualnie w budowie."
+        },
+        "testing.paragraph": {
+            "en": "You can contact me at:",
+            "pl": "Skontaktuj się ze mną pod adresem e-mail:"
+        },
+        "testing.langbutton": {
+            "en": "Zmień język na polski",
+            "pl": "Change language to english"
+        }
+    }
+}

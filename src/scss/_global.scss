@@ -1,21 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;400;600&display=swap');
 
-$small-margin: 0.5em;
+$small-margin: 0.3em;
 $standard-margin: 1em;
 $big-margin: 1.5em;
 
 $accent-color: #0077b6;
 $secondary-color: #023e8a;
 $background-color: #000126;
+$active-color: #C00;
 
 $text-color: #eee;
+
+$standard-transition_length: 0.2s;
 
 @mixin hover_bg($color) {
     background: $color;
 
     &:hover {
-        background: lighten($color, 0.2);
+        background: lighten($color, 10);
     }
 }
 
-$standard-transition_length: 0.2s;
+@mixin outlined($color, $border-width: 3px) {
+    color: $color;
+    border: $border-width solid $color;
+}
+
+h1 {
+    margin: 0;
+}

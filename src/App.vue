@@ -7,7 +7,8 @@ import SiteFooter from './components/SiteFooter.vue';
 <template>
     <NavBar />
     <div class="content">
-        <router-view></router-view>
+        <!-- TODO: Add transition effect -->
+        <router-view></router-view> 
     </div>
     <SiteFooter />
 </template>
@@ -30,5 +31,10 @@ body {
 .content {
     margin: $big-margin auto;
     width: 80%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: $small-margin;
+    }
 }
 </style>
