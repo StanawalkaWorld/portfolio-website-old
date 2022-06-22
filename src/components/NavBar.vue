@@ -2,6 +2,7 @@
 import Logo from '../assets/Logo.png';
 
 import { useLanguageStore } from '../store/lang';
+import LanguageButton from './UIElements/LanguageButton.vue';
 
 const lang = useLanguageStore();
 
@@ -25,6 +26,8 @@ const lang = useLanguageStore();
                 {{ lang.translationFor("skeleton", "navlink.contact") }}
             </a>
         </div>
+
+        <LanguageButton class="langbutton" />
     </nav>
 </template>
 
@@ -58,6 +61,12 @@ const lang = useLanguageStore();
             }
         }
     }
+
+    .langbutton {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
 }
 .logo {
     max-height: 40px;
@@ -85,6 +94,14 @@ const lang = useLanguageStore();
                 border-radius: 0;
                 text-align: center;
             }
+        }
+
+        .langbutton {
+            top: unset;
+            bottom: 20px;
+            right: 20px;
+
+            padding: $standard-margin;
         }
     }
 }

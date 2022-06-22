@@ -16,13 +16,17 @@ const lang = useLanguageStore();
     outline: 0;
     border: 0;
 
-    border-radius: 100%;
-    padding: $small-margin;
+    border-radius: $big-margin;
+    padding: $small-margin + 0.2em;
     background: rgba(255, 255, 255, 0.2);
 
     &:hover {
         background: rgba(255, 255, 255, 0.5);
         cursor: pointer;
     }
+}
+
+.fi {
+    border-radius: $small-margin - 0.1em;
 }
 </style>
