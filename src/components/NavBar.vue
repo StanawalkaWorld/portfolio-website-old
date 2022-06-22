@@ -55,6 +55,7 @@ const lang = useLanguageStore();
             margin-right: $big-margin;
             padding: $standard-margin;
             border-radius: $small-margin;
+            transition: $standard-transition_length background;
 
             &:hover {
                 background: rgba(255, 255, 255, 0.2);

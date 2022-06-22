@@ -16,6 +16,7 @@ const lang = useLanguageStore();
     outline: 0;
     border: 0;
 
+    transition: $standard-transition_length;
     border-radius: $big-margin;
     padding: $small-margin + 0.2em;
     background: rgba(255, 255, 255, 0.2);
