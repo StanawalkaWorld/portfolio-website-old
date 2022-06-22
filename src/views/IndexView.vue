@@ -6,9 +6,9 @@ const lang = useLanguageStore();
 
 <template>
     <!-- TODO: Introduction to who I am and stuff -->
-    <h1>Website currently under construction.</h1>
-    <p>You can contact me at: <a class="mail" href="mailto:dawid.baranski.ti@gmail.com">dawid.baranski.ti@gmail.com</a></p>
-    <button @click="lang.switchLanguage">Switch language</button>
+    <h1>{{ lang.translationFor("content", "testing.header") }}</h1>
+    <p>{{ lang.translationFor("content", "testing.paragraph") }} <a class="mail" href="mailto:dawid.baranski.ti@gmail.com">dawid.baranski.ti@gmail.com</a></p>
+    <button @click="lang.switchLanguage">{{ lang.translationFor("content", "testing.langbutton") }}</button>
 </template>
 
 <style lang="scss" scoped>

@@ -16,13 +16,13 @@ const lang = useLanguageStore();
         
         <div class="navlinklist">
             <a class="navlink" href="#">
-                {{ lang.translationFor("navlink.home") }}
+                {{ lang.translationFor("skeleton", "navlink.home") }}
             </a>
             <a class="navlink" href="#about">
-                {{ lang.translationFor("navlink.about") }}
+                {{ lang.translationFor("skeleton", "navlink.about") }}
             </a>
             <a class="navlink" href="#contact">
-                {{ lang.translationFor("navlink.contact") }}
+                {{ lang.translationFor("skeleton", "navlink.contact") }}
             </a>
         </div>
     </nav>
