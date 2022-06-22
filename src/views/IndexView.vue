@@ -1,13 +1,12 @@
 <script setup>
 import { useLanguageStore } from '../store/lang';
+import LandingBlock from '../components/LandingBlock.vue';
 
 const lang = useLanguageStore();
 </script>
 
 <template>
-    <!-- TODO: Introduction to who I am and stuff -->
-    <h1>{{ lang.translationFor("content", "testing.header") }}</h1>
-    <p>{{ lang.translationFor("content", "testing.paragraph") }} <a class="mail" href="mailto:dawid.baranski.ti@gmail.com">dawid.baranski.ti@gmail.com</a></p>
+    <LandingBlock />
 </template>
 
 <style lang="scss" scoped>
