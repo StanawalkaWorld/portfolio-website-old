@@ -46,6 +46,7 @@ const lang = useLanguageStore();
     }
 
     .navlinklist {
+        display: flex;
         .navlink {
             display: block;
             margin-right: $big-margin;
