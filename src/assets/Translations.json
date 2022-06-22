@@ -28,10 +28,11 @@
         },
         "landing.paragraph": {
             "en": "Hi! my name is Dawid and I am a very passionate web developer! My main goal is to deliver websites that are readable and get to the point.",
-            "pl": "Witaj! Mam na imię Dawid i pasjonuje się tworzeniem stron internetowych! Moim głównym celem jest dostarczanie przejrzystych stron internetowych, które wprost przekazują swoje informacje. Dzisiejsze strony internetowe coraz bardzej tracą na przejrzystości treści, jak i wydajności na budżetowych platformach. Problem nie tyczy się tylko starego sprzętu, ale i urządzeń mobilnych, takich jak smartfony."
+            "pl": "Witaj! Mam na imię Dawid i pasjonuje się tworzeniem stron internetowych! Moim głównym celem jest dostarczanie przejrzystych witryn, które w prosty sposób przekazują swoją treść."
         },
         "goal.paragraph": {
-            "en": "One of the most frustrating parts of the modern web is their performence, or more like lack of it. For this reason, many old computers struggle while loading or exploring many popular webpages. This is why I decided to keep my websites simple by reducing the amount of technologies I use"
+            "en": "One of the most frustrating parts of the modern web is the performence, or more precisely, the lack of it. Many old computers struggle to load popular webpages, let alone browse them. This is why I decided to keep my websites simple, by reducing the amount of frameworks I use and still keep them responsive.",
+            "pl": "Dzisiejsze strony internetowe celują w zaawansowany design, który negatywnie wpływa na wydajność strony. Problem ten nie tyczy się tylko starych komputerów, ale i budżetowych urządzeń mobilnych, w tym smartfony, tablety i laptopy."
         }
     }
 }
