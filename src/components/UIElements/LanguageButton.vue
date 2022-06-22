@@ -7,7 +7,7 @@ const lang = useLanguageStore();
 
 <template>
     <button class="langbutton" @click="lang.switchLanguage">
-        <span :class="['fi', lang.current_lang == 'pl' ? 'fi-us' : 'fi-pl']"></span>
+        <span :class="['fi', lang.current_lang == 'pl' ? 'fi-gb' : 'fi-pl']"></span>
     </button>
 </template>
 
