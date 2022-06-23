@@ -9,7 +9,7 @@ const lang = useLanguageStore();
 <template>
     <TwoColumnContent>
         <template #first>
-
+            <!-- TODO: Place a fitting image -->
         </template>
         <template #second>
             <TitledContent 
