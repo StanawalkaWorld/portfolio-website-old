@@ -22,10 +22,13 @@ const props = defineProps<{
 
 .content-header {
     color: $dimmed-color;
-    font-size: $content-header1;
+    
+    @include header1();
 }
 .content-paragraph {
     color: $dimmed-color;
-    font-size: $content-paragraph;
+    
+    @include paragraph();
 }
+
 </style>

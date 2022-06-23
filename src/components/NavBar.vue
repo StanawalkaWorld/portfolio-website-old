@@ -96,7 +96,11 @@ const lang = useLanguageStore();
                 text-align: center;
             }
         }
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    .navbar {
         .langbutton {
             top: unset;
             bottom: 20px;

@@ -9,18 +9,20 @@ $big-margin: 1.5em;
 
 // color scheme
 $accent-color: #0077b6;
-$secondary-color: #023e8a;
+$secondary-color: #012d79;
 $background-color: #000126;
 $active-color: #C00;
 
+// Colormind colors
+$cm-brand-color: #666078;
+$cm-light-shade: #F1EFDF;
+$cm-light-accent: #76829A;
+$cm-dark-accent: #636585;
+$cm-dark-shade: #000126;
+
 // text colors
 $text-color: #eee;
-$dimmed-color: #ddd;
-
-// font-sizes
-$content-paragraph: 1.5rem;
-$content-header1: 2.5rem;
-$content-header2: 2.0rem;
+$dimmed-color: #def;
 
 // animation timings
 $standard-transition_length: 0.2s;
@@ -39,11 +41,41 @@ $standard-transition_length: 0.2s;
     border: $border-width solid $color;
 }
 
+@mixin header1() {
+    font-size: 4vw;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.5em;
+    }
+}
+
+@mixin header2() {
+    font-size: 3vw;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.0em;
+    }
+}
+
+@mixin paragraph() {
+    font-size: 2vw;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5em;
+    }
+}
+
 // Computed classes
 $alignements: left, center, right, justify;
 @each $align in $alignements {
     .text-#{$align} {
         text-align: $align;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-left, .text-right {
+        text-align: center;
     }
 }
 
