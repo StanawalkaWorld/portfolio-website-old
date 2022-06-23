@@ -25,7 +25,7 @@ a, a:active, a:visited {
 body {
     background: $background-color;
     color: $text-color;
-    font-family: 'Anek Latin', sans-serif;
+    font-family: $fonts;
 }
 
 .content {
