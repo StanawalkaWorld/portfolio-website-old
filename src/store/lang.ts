@@ -1,9 +1,8 @@
 import { defineStore } from 'pinia';
 import { computed, ref, Ref, unref } from 'vue';
-
 import Translations from '../assets/Translations.json';
 
-type TextType = "skeleton" | "content;"
+type TextType = "skeleton" | "content";
 
 export const useLanguageStore = defineStore("LanguageStore", () => {
     const current_lang: Ref<"pl" | "en"> = ref("en");
