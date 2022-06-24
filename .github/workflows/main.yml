@@ -33,6 +33,9 @@ jobs:
             # init npm for Continous integration
             - run: npm ci
 
+            - name: Run vitest with coverage
+              run: npm test
+
             - name: Build Vue.js 3 App
               run: npm run build
 

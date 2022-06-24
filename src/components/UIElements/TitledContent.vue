@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-type alignement = "left" | "center" | "right" | "justified";
+type alignement = "left" | "center" | "right" | "justify" | undefined;
 
 const props = defineProps<{
     title: string
@@ -7,27 +7,17 @@ const props = defineProps<{
     paragraphAlign: alignement
 }>();
 
-const headerStyle = {
-    textAlign: props.headerAlign
-};
-
-const paragraphStyle = {
-    textAlign: props.paragraphAlign
-}
-
 </script>
 
 <template>
-    <h2 class="content-header" :style="headerStyle">
+    <h2 :class="['content-header', headerAlign ? `text-${headerAlign}` : '']">
         {{ title }}
     </h2>
-    <p class="content-paragraph">
+    <p :class="['content-paragraph', paragraphAlign ? `text-${paragraphAlign}` : '']">
         <slot></slot>
     </p>
 </template>
 
 <style lang="scss" scoped>
-.content-header {
 
-}
 </style>

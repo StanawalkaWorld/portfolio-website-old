@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;400;600&display=swap');
 
+// Global theme variables
+
+// font-stack
+$fonts: 'Anek Latin', arial, sans-serif;
+
+// margins
 $small-margin: 0.3em;
 $standard-margin: 1em;
 $big-margin: 1.5em;
 
+// color scheme
 $accent-color: #0077b6;
-$secondary-color: #023e8a;
+$secondary-color: #012d79;
 $background-color: #000126;
 $active-color: #C00;
 
-$text-color: #eee;
+// Colormind colors
+$cm-brand-color: #666078;
+$cm-light-shade: #F1EFDF;
+$cm-light-accent: #76829A;
+$cm-dark-accent: #636585;
+$cm-dark-shade: #000126;
 
+// text colors
+$text-color: #eee;
+$dimmed-color: #def;
+
+// animation timings
 $standard-transition_length: 0.2s;
 
+// Mixins
 @mixin hover_bg($color) {
     background: $color;
 
@@ -26,6 +44,111 @@ $standard-transition_length: 0.2s;
     border: $border-width solid $color;
 }
 
-h1 {
-    margin: 0;
+@mixin header1() {
+    font-size: 4vw;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.5em;
+    }
+}
+
+@mixin header2() {
+    font-size: 2.2vw;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 2.0em;
+    }
+}
+
+@mixin prominent_paragraph() {
+    font-size: 2vw;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5em;
+    }
+}
+
+@mixin content_paragraph() {
+    font-size: 1.5vw;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.5em;
+    }
+}
+
+// Computed classes
+$alignements: left, center, right, justify;
+@each $align in $alignements {
+    .text-#{$align} {
+        text-align: $align;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text-left, .text-right {
+        text-align: center;
+    }
+}
+
+// Global styles
+// Prominent text
+.prominent-header {
+    color: $dimmed-color;
+    
+    @include header1();
+}
+
+.prominent-paragraph {
+    color: $dimmed-color;
+    
+    @include prominent_paragraph();
+}
+
+// Content text
+.content-header {
+    color: $text-color;
+
+    @include header2();
+}
+.content-paragraph {
+    color: $text-color;
+
+    @include content_paragraph();
+}
+
+.content-icon {
+    color: $secondary-color;
+    font-size: 1000px;
+}
+
+.standard-link {
+    color: $accent-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+%input {
+    outline: 0;
+    border: 0;
+    color: $text-color;
+}
+
+.input {
+    @extend %input;
+}
+
+.btn {
+    @extend %input;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100%;
 }

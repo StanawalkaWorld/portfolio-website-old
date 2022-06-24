@@ -1,14 +1,18 @@
 <script setup>
-import NavBar from './components/NavBar.vue';
-import SiteFooter from './components/SiteFooter.vue';
+import NavBar from './components/StructureBlocks/NavBar.vue';
+import SiteFooter from './components/StructureBlocks/SiteFooter.vue';
+import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
+import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
     
 </script>
 
 <template>
     <NavBar />
     <div class="content">
-        <!-- TODO: Add transition effect -->
-        <router-view></router-view> 
+        <LandingBlock />
+        <div class="separator"></div>
+        <ContactBlock />
+        <div class="separator"></div>
     </div>
     <SiteFooter />
 </template>
@@ -17,7 +21,7 @@ import SiteFooter from './components/SiteFooter.vue';
 * {
     box-sizing: border-box;
 }
-a, a:active, a:visited {
+a, a:active {
     color: $text-color;
     text-decoration: none;
 }
@@ -25,7 +29,7 @@ a, a:active, a:visited {
 body {
     background: $background-color;
     color: $text-color;
-    font-family: 'Anek Latin', sans-serif;
+    font-family: $fonts;
 }
 
 .content {
@@ -34,7 +38,11 @@ body {
 
     @media screen and (max-width: 768px) {
         width: 100%;
-        padding: $small-margin;
+        padding: $standard-margin;
     }
+}
+
+.separator {
+    margin-bottom: 20vw;
 }
 </style>

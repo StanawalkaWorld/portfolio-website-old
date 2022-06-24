@@ -7,7 +7,8 @@ const lang = useLanguageStore();
 
 <template>
     <button class="langbutton" @click="lang.switchLanguage">
-        <span :class="['fi', lang.current_lang == 'pl' ? 'fi-us' : 'fi-pl']"></span>
+        <span :class="['fi', lang.current_lang == 'pl' ? 'fi-gb' : 'fi-pl']"></span>
+        {{ lang.translationFor("skeleton", "button.langbutton") }}
     </button>
 </template>
 
@@ -16,17 +17,22 @@ const lang = useLanguageStore();
     outline: 0;
     border: 0;
 
+    transition: $standard-transition_length;
     border-radius: $big-margin;
     padding: $small-margin + 0.2em;
-    background: rgba(255, 255, 255, 0.2);
+    background: lighten($secondary-color, 20);
+    color: $text-color;
+
+    font-size: 1.2em;
 
     &:hover {
-        background: rgba(255, 255, 255, 0.5);
+        background: lighten($secondary-color, 40);
         cursor: pointer;
     }
 }
 
 .fi {
     border-radius: $small-margin - 0.1em;
+    margin-right: 5px;
 }
 </style>

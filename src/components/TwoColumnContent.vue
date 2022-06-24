@@ -1,4 +1,5 @@
 <template>
+    <slot></slot>
     <div class="two-column-container">
         <div class="two-column">
             <slot name="first"></slot>
@@ -17,9 +18,12 @@
 
     .two-column {
         width: 50%;
+        padding: $small-margin;
     }
 
-    @media screen and (max-width: 768) {
+}
+@media screen and (max-width: 1024px) {
+    .two-column-container{
         flex-direction: column;
 
         .two-column {
