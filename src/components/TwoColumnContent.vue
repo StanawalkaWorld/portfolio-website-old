@@ -22,7 +22,7 @@
     }
 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .two-column-container{
         flex-direction: column;
 

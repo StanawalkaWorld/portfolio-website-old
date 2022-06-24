@@ -86,3 +86,18 @@ $alignements: left, center, right, justify;
 h1 {
     margin: 0;
 }
+
+%input {
+    outline: 0;
+    border: 0;
+    color: $text-color;
+}
+
+.input {
+    @extend %input;
+}
+
+.btn {
+    @extend %input;
+}
+
