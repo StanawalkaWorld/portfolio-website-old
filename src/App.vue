@@ -1,14 +1,14 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
 import SiteFooter from './components/SiteFooter.vue';
+import LandingBlock from './components/LandingBlock.vue';
     
 </script>
 
 <template>
     <NavBar />
     <div class="content">
-        <!-- TODO: Add transition effect -->
-        <router-view></router-view> 
+        <LandingBlock />
     </div>
     <SiteFooter />
 </template>
