@@ -9,7 +9,7 @@ const lang = useLanguageStore();
     <TwoColumnContent>
         <template #first>
             <div id="contact" class="flex-center">
-                <h2 class="context-header text-center">{{ lang.translationFor("content", "contact.context") }}</h2>
+                <h2 class="content-header text-center">{{ lang.translationFor("content", "contact.context") }}</h2>
             </div>
         </template>
         <template #second>

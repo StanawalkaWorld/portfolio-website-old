@@ -12,6 +12,7 @@ import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
         <LandingBlock />
         <div class="separator"></div>
         <ContactBlock />
+        <div class="separator"></div>
     </div>
     <SiteFooter />
 </template>
@@ -37,7 +38,7 @@ body {
 
     @media screen and (max-width: 768px) {
         width: 100%;
-        padding: $small-margin;
+        padding: $standard-margin;
     }
 }
 

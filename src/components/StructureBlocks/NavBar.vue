@@ -58,6 +58,8 @@ const lang = useLanguageStore();
             border-radius: $small-margin;
             transition: $standard-transition_length background;
 
+            font-size: 1.2em;
+
             &:hover {
                 background: rgba(255, 255, 255, 0.2);
             }
@@ -66,8 +68,8 @@ const lang = useLanguageStore();
 
     .langbutton {
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 25px;
+        right: 25px;
     }
 }
 .logo {

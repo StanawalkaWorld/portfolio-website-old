@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import TwoColumnContent from '../TwoColumnContent.vue';
-import TitledContent from '../UIElements/TitledContent.vue';
 
 import { useLanguageStore } from '../../store/lang';
-import GradientButton from '../UIElements/GradientButton.vue';
 const lang = useLanguageStore();
 </script>
 
@@ -13,13 +11,8 @@ const lang = useLanguageStore();
             <!-- TODO: Place a fitting image -->
         </template>
         <template #second>
-            <TitledContent 
-                :title="lang.translationFor('content', 'landing.mainheader')" 
-                header-align="left"
-                paragraph-align="justify"
-            >
-                {{ lang.translationFor("content", "landing.paragraph") }}
-            </TitledContent>
+            <h1 class="prominent-header text-left">{{ lang.translationFor("content", "landing.mainheader") }}</h1>
+            <p class="prominent-paragraph text-justify">{{ lang.translationFor("content", "landing.paragraph") }}</p>
         </template>
     </TwoColumnContent>
 </template>

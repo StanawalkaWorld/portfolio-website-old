@@ -23,6 +23,8 @@ const lang = useLanguageStore();
     background: lighten($secondary-color, 20);
     color: $text-color;
 
+    font-size: 1.2em;
+
     &:hover {
         background: lighten($secondary-color, 40);
         cursor: pointer;
