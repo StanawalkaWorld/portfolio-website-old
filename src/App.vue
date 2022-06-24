@@ -2,6 +2,7 @@
 import NavBar from './components/StructureBlocks/Navbar.vue';
 import SiteFooter from './components/StructureBlocks/SiteFooter.vue';
 import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
+import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
     
 </script>
 
@@ -9,6 +10,8 @@ import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
     <NavBar />
     <div class="content">
         <LandingBlock />
+        <div class="separator"></div>
+        <ContactBlock />
     </div>
     <SiteFooter />
 </template>
@@ -17,7 +20,7 @@ import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
 * {
     box-sizing: border-box;
 }
-a, a:active, a:visited {
+a, a:active {
     color: $text-color;
     text-decoration: none;
 }
@@ -36,5 +39,9 @@ body {
         width: 100%;
         padding: $small-margin;
     }
+}
+
+.separator {
+    margin-bottom: 20vw;
 }
 </style>
