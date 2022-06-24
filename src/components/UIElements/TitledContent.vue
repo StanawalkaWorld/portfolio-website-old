@@ -20,15 +20,4 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 
-.content-header {
-    color: $dimmed-color;
-    
-    @include header1();
-}
-.content-paragraph {
-    color: $dimmed-color;
-    
-    @include paragraph();
-}
-
 </style>
