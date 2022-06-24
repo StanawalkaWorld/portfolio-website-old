@@ -1,5 +1,5 @@
 <script setup>
-import NavBar from './components/StructureBlocks/Navbar.vue';
+import NavBar from './components/StructureBlocks/NavBar.vue';
 import SiteFooter from './components/StructureBlocks/SiteFooter.vue';
 import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
 import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
