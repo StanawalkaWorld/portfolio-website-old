@@ -11,9 +11,6 @@ const lang = useLanguageStore();
     <TwoColumnContent>
         <template #first>
             <!-- TODO: Place a fitting image -->
-            <GradientButton>
-                Testing button
-            </GradientButton>
         </template>
         <template #second>
             <TitledContent 
