@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue-icons/feather": "^1.0.19",
     "flag-icons": "^6.6.0",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.14",
