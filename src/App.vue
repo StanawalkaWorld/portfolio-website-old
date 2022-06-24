@@ -1,7 +1,7 @@
 <script setup>
-import NavBar from './components/NavBar.vue';
-import SiteFooter from './components/SiteFooter.vue';
-import LandingBlock from './components/LandingBlock.vue';
+import NavBar from './components/StructureBlocks/Navbar.vue';
+import SiteFooter from './components/StructureBlocks/SiteFooter.vue';
+import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
     
 </script>
 

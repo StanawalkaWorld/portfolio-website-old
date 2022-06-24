@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import TwoColumnContent from './TwoColumnContent.vue';
-import TitledContent from './UIElements/TitledContent.vue';
+import TwoColumnContent from '../TwoColumnContent.vue';
+import TitledContent from '../UIElements/TitledContent.vue';
 
-import { useLanguageStore } from '../store/lang';
+import { useLanguageStore } from '../../store/lang';
+import GradientButton from '../UIElements/GradientButton.vue';
 const lang = useLanguageStore();
 </script>
 
@@ -10,6 +11,9 @@ const lang = useLanguageStore();
     <TwoColumnContent>
         <template #first>
             <!-- TODO: Place a fitting image -->
+            <GradientButton>
+                Testing button
+            </GradientButton>
         </template>
         <template #second>
             <TitledContent 

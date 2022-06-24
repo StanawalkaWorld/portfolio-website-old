@@ -1,8 +1,8 @@
 <script setup>
-import Logo from '../assets/Logo.png';
+import Logo from '../../assets/Logo.png';
 
-import { useLanguageStore } from '../store/lang';
-import LanguageButton from './UIElements/LanguageButton.vue';
+import { useLanguageStore } from '../../store/lang';
+import LanguageButton from '../UIElements/LanguageButton.vue';
 
 const lang = useLanguageStore();
 
@@ -17,13 +17,16 @@ const lang = useLanguageStore();
         
         <div class="navlinklist">
             <a class="navlink" href="#">
-                {{ lang.translationFor("skeleton", "navlink.home") }}
+                <nobr>{{ lang.translationFor("skeleton", "navlink.home") }}</nobr>
             </a>
             <a class="navlink" href="#about">
-                {{ lang.translationFor("skeleton", "navlink.about") }}
+                <nobr>{{ lang.translationFor("skeleton", "navlink.about") }}</nobr>
+            </a>
+            <a class="navlink" href="#skills">
+                <nobr>{{ lang.translationFor("skeleton", "navlink.skills") }}</nobr>
             </a>
             <a class="navlink" href="#contact">
-                {{ lang.translationFor("skeleton", "navlink.contact") }}
+                <nobr>{{ lang.translationFor("skeleton", "navlink.contact") }}</nobr>
             </a>
         </div>
 

@@ -11,6 +11,10 @@
         "navlink.about": {
             "en": "About me",
             "pl": "O mnie"
+        },
+        "navlink.skills": {
+            "en": "My skills",
+            "pl": "Moje umiejętności"
         }
     },
     "content": {
