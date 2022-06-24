@@ -15,6 +15,10 @@
         "navlink.skills": {
             "en": "My skills",
             "pl": "Moje umiejętności"
+        },
+        "button.langbutton": {
+            "en": "Zmień język",
+            "pl": "Switch language"
         }
     },
     "content": {
@@ -37,6 +41,10 @@
         "goal.paragraph": {
             "en": "One of the most frustrating parts of the modern web is the performence, or more precisely, the lack of it. Many old computers struggle to load popular webpages, let alone browse them. This is why I decided to keep my websites simple, by reducing the amount of frameworks I use and still keep them responsive.",
             "pl": "Dzisiejsze strony internetowe celują w zaawansowany design, który negatywnie wpływa na wydajność strony. Problem ten nie tyczy się tylko starych komputerów, ale i budżetowych urządzeń mobilnych, w tym smartfony, tablety i laptopy."
+        },
+        "contact.context": {
+            "en": "Contact me here:",
+            "pl": "Skontaktuj się ze mną tutaj:"
         }
     }
 }
