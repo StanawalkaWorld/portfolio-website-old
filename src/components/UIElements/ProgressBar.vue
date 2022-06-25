@@ -11,7 +11,7 @@ const props = defineProps({
             return value > 0 && value <= 100;
         }
     },
-    progessColor: {
+    progressColor: {
         required: false,
         default: "#C00",
         type: String
@@ -37,7 +37,7 @@ const progressWidth = computed(() => {
     <div class="bar">
         <div 
             class="bar-progress" 
-            :style="{ width: progressWidth, backgroundColor: progessColor, height: propHeight }">
+            :style="{ width: progressWidth, backgroundColor: progressColor, height: propHeight }">
         </div>
     </div>
 </template>
