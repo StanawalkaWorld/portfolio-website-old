@@ -45,7 +45,7 @@ const progressWidth = computed(() => {
 <style lang="scss" scoped>
 .bar {
     border-radius: 10px;
-    background: $cm-light-accent;
+    background: #ddd;
 
     width: 100%;
 }
