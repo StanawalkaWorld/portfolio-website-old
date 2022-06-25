@@ -60,14 +60,16 @@ skills.sort((a, b) => b.value - a.value);
     <TwoColumnContent>
         <template #first>
             <div class="flex-center">
-                <TitledContent
-                    :title="lang.translationFor('content', 'skills.header')"
-                    header-align="right"
-                    paragraph-align="justify"
-                >
-                    <div id="skills"></div>
-                    {{ lang.translationFor('content', 'skills.paragraph') }}
-                </TitledContent>
+                <div>
+                    <TitledContent
+                        :title="lang.translationFor('content', 'skills.header')"
+                        header-align="right"
+                        paragraph-align="justify"
+                    >
+                        <div id="skills"></div>
+                        {{ lang.translationFor('content', 'skills.paragraph') }}
+                    </TitledContent>
+                </div>
             </div>
         </template>
         <template #second>
