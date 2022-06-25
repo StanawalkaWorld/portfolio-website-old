@@ -3,6 +3,7 @@ import NavBar from './components/StructureBlocks/NavBar.vue';
 import SiteFooter from './components/StructureBlocks/SiteFooter.vue';
 import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
 import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
+import SkillsBlock from './components/StructureBlocks/SkillsBlock.vue';
     
 </script>
 
@@ -10,6 +11,8 @@ import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
     <NavBar />
     <div class="content">
         <LandingBlock />
+        <div class="separator"></div>
+        <SkillsBlock />
         <div class="separator"></div>
         <ContactBlock />
         <div class="separator"></div>
