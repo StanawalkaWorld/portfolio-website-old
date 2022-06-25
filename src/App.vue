@@ -4,7 +4,11 @@ import SiteFooter from './components/StructureBlocks/SiteFooter.vue';
 import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
 import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
 import SkillsBlock from './components/StructureBlocks/SkillsBlock.vue';
-    
+
+import { ArrowUpIcon } from "@vue-icons/feather";
+import { useSmoothScroll } from './composables/scroll';
+const scroll = useSmoothScroll();
+
 </script>
 
 <template>
@@ -18,6 +22,9 @@ import SkillsBlock from './components/StructureBlocks/SkillsBlock.vue';
         <div class="separator"></div>
     </div>
     <SiteFooter />
+    <div class="home-button" @click="scroll.scrollTo('.navbar')">
+        <ArrowUpIcon />
+    </div>
 </template>
 
 <style lang="scss">
@@ -46,6 +53,23 @@ body {
 }
 
 .separator {
-    margin-bottom: 20vw;
+    margin-bottom: 40vh;
+}
+
+.home-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 0%;
+
+    background: lighten($secondary-color, 20);
+
+    &:hover {
+        background: lighten($secondary-color, 40);
+        cursor: pointer;
+    }
 }
 </style>
