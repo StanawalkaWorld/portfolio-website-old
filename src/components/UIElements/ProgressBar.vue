@@ -24,8 +24,12 @@ const props = defineProps({
 });
 
 const propHeight = computed(() => {
-    return ((prominent) ? "20px" : "10px");
+    return ((props.prominent) ? "20px" : "10px");
 });
+
+const progressWidth = computed(() => {
+    return `${props.value}%`;
+})
 
 </script>
 
@@ -33,7 +37,7 @@ const propHeight = computed(() => {
     <div class="bar">
         <div 
             class="bar-progress" 
-            :style="{ width: value, backgroundColor: progessColor, height: propHeight }">
+            :style="{ width: progressWidth, backgroundColor: progessColor, height: propHeight }">
         </div>
     </div>
 </template>
