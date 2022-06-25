@@ -106,7 +106,7 @@ const lang = useLanguageStore();
     .navbar {
         .langbutton {
             top: unset;
-            bottom: 20px;
+            bottom: 100px;
             right: 20px;
 
             padding: $standard-margin;

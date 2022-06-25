@@ -47,7 +47,7 @@ $standard-transition_length: 0.2s;
 @mixin header1() {
     font-size: 4vw;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         font-size: 2.5em;
     }
 }
@@ -63,7 +63,7 @@ $standard-transition_length: 0.2s;
 @mixin prominent_paragraph() {
     font-size: 2vw;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         font-size: 1.5em;
     }
 }
@@ -85,7 +85,7 @@ $alignements: left, center, right, justify;
 }
 
 @media screen and (max-width: 1024px) {
-    .text-left, .text-right {
+    .text-left, .text-right, .text-justify {
         text-align: center;
     }
 }

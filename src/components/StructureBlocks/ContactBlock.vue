@@ -16,10 +16,12 @@ const lang = useLanguageStore();
             <div class="flex-center">
                 <div>
                     <p class="content-paragraph">
-                        E-mail: <a class="standard-link" href="mailto:dawid.baranski.ti@gmail.com">dawid.baranski.ti@gmail.com</a>
+                        E-mail: <br />
+                        <a class="standard-link" href="mailto:dawid.baranski.ti@gmail.com">dawid.baranski.ti@gmail.com</a>
                     </p>
                     <p class="content-paragraph">
-                        Github: <a class="standard-link" href="https://github.com/StanawalkaWorld">StanawalkaWorld</a>
+                        Github: <br />
+                        <a class="standard-link" href="https://github.com/StanawalkaWorld">StanawalkaWorld</a>
                     </p>
                 </div>
             </div>

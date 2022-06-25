@@ -45,6 +45,14 @@
         "contact.context": {
             "en": "Contact me here:",
             "pl": "Skontaktuj się ze mną tutaj:"
+        },
+        "skills.header": {
+            "en": "My skills.",
+            "pl": "Moje umiejętności."
+        },
+        "skills.paragraph": {
+            "en": "Here is the list of what I learned and plan to improve on in the near future. Of course, this isn't my final skillset. I am open to any new frameworks or languages I would need to learn in my next job!",
+            "pl": "Oto lista moich umiejętności w zakresie web dev'u. jestem otwarty na wszelkie nowe rozwiązania i chętnie poszerzę swoją wiedze o nowe frameworki."
         }
     }
 }
