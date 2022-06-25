@@ -71,7 +71,7 @@ skills.sort((a, b) => b.value - a.value);
             </div>
         </template>
         <template #second>
-            <div class="flex-center">
+            <div class="flex-center skills-flex">
                 <template v-for="skill in skills" :key="skill.name">
                     <p class="content-paragraph">{{ skill.name }}</p>
                     <ProgressBar 
@@ -87,8 +87,12 @@ skills.sort((a, b) => b.value - a.value);
 <style lang="scss" scoped>
 .skill-progress {
     width: 50%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
 }
-.flex-center {
+.skills-flex {
     align-items: flex-end;
 }
 </style>
