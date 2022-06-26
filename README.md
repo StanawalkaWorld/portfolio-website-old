@@ -7,7 +7,7 @@ This is the source code for my portfolio website available [Here](https://stanaw
 
 ## About me
 
-My name is Dawid Barański and I am a self learning web developer. I explored both back- and front-end. Most of my experience is centered around the Vue.js framework (Vue 3, Vue router, Pinia, Nuxt.js, Vite, Vitest), but I continue to explore other regions of computer programming.
+My name is Dawid Barański and I am a self learning web developer. I explored both back- and front-end during my self-taught journey. Most of my experience is centered around the Vue.js framework (Vue 3, Vue router, Pinia, Nuxt.js, Vite, Vitest), but I continue to explore other regions of computer programming.
 
 ## Contact
 
