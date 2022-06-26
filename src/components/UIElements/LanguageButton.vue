@@ -1,13 +1,13 @@
 <script setup lang="ts">
-
-import { useLanguageStore } from '../../store/lang';
+import { useLanguageStore } from "../../store/lang";
 const lang = useLanguageStore();
-
 </script>
 
 <template>
     <button class="langbutton" @click="lang.switchLanguage">
-        <span :class="['fi', lang.current_lang == 'pl' ? 'fi-gb' : 'fi-pl']"></span>
+        <span
+            :class="['fi', lang.current_lang == 'pl' ? 'fi-gb' : 'fi-pl']"
+        ></span>
         {{ lang.translationFor("skeleton", "button.langbutton") }}
     </button>
 </template>

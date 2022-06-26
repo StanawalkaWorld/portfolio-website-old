@@ -1,7 +1,7 @@
 <script setup>
-import TwoColumnContent from '../TwoColumnContent.vue';
+import TwoColumnContent from "../TwoColumnContent.vue";
 
-import { useLanguageStore } from '../../store/lang';
+import { useLanguageStore } from "../../store/lang";
 const lang = useLanguageStore();
 </script>
 
@@ -9,7 +9,9 @@ const lang = useLanguageStore();
     <TwoColumnContent>
         <template #first>
             <div id="contact" class="flex-center">
-                <h2 class="content-header text-center">{{ lang.translationFor("content", "contact.context") }}</h2>
+                <h2 class="content-header text-center">
+                    {{ lang.translationFor("content", "contact.context") }}
+                </h2>
             </div>
         </template>
         <template #second>
@@ -17,11 +19,19 @@ const lang = useLanguageStore();
                 <div>
                     <p class="content-paragraph">
                         E-mail: <br />
-                        <a class="standard-link" href="mailto:dawid.baranski.ti@gmail.com">dawid.baranski.ti@gmail.com</a>
+                        <a
+                            class="standard-link"
+                            href="mailto:dawid.baranski.ti@gmail.com"
+                            >dawid.baranski.ti@gmail.com</a
+                        >
                     </p>
                     <p class="content-paragraph">
                         Github: <br />
-                        <a class="standard-link" href="https://github.com/StanawalkaWorld">StanawalkaWorld</a>
+                        <a
+                            class="standard-link"
+                            href="https://github.com/StanawalkaWorld"
+                            >StanawalkaWorld</a
+                        >
                     </p>
                 </div>
             </div>
@@ -29,6 +39,4 @@ const lang = useLanguageStore();
     </TwoColumnContent>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

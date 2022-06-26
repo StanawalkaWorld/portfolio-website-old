@@ -1,30 +1,46 @@
 <script setup>
-import Logo from '../../assets/Logo.png';
-import LanguageButton from '../UIElements/LanguageButton.vue';
+import Logo from "../../assets/Logo.png";
+import LanguageButton from "../UIElements/LanguageButton.vue";
 
-import { useSmoothScroll } from '../../composables/scroll';
-import { useLanguageStore } from '../../store/lang';
+import { useSmoothScroll } from "../../composables/scroll";
+import { useLanguageStore } from "../../store/lang";
 
 const scroll = useSmoothScroll();
 const lang = useLanguageStore();
-
-
 </script>
 
 <template>
     <nav class="navbar">
-        <img :src="Logo" alt="✔" class="logo">
+        <img :src="Logo" alt="✔" class="logo" />
         <h1 class="logo-caption">Dawid Barański</h1>
-        
+
         <div class="navlinklist">
-            <a class="navlink" href="#about" @click.prevent="scroll.scrollTo('#about')">
-                <nobr>{{ lang.translationFor("skeleton", "navlink.about") }}</nobr>
+            <a
+                class="navlink"
+                href="#about"
+                @click.prevent="scroll.scrollTo('#about')"
+            >
+                <nobr>{{
+                    lang.translationFor("skeleton", "navlink.about")
+                }}</nobr>
             </a>
-            <a class="navlink" href="#skills" @click.prevent="scroll.scrollTo('#skills')">
-                <nobr>{{ lang.translationFor("skeleton", "navlink.skills") }}</nobr>
+            <a
+                class="navlink"
+                href="#skills"
+                @click.prevent="scroll.scrollTo('#skills')"
+            >
+                <nobr>{{
+                    lang.translationFor("skeleton", "navlink.skills")
+                }}</nobr>
             </a>
-            <a class="navlink" href="#contact" @click.prevent="scroll.scrollTo('#contact')">
-                <nobr>{{ lang.translationFor("skeleton", "navlink.contact") }}</nobr>
+            <a
+                class="navlink"
+                href="#contact"
+                @click.prevent="scroll.scrollTo('#contact')"
+            >
+                <nobr>{{
+                    lang.translationFor("skeleton", "navlink.contact")
+                }}</nobr>
             </a>
         </div>
 

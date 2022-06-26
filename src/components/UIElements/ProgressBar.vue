@@ -1,6 +1,5 @@
 <script setup>
-import { computed } from '@vue/reactivity';
-
+import { computed } from "@vue/reactivity";
 
 const props = defineProps({
     value: {
@@ -9,36 +8,39 @@ const props = defineProps({
 
         validator(value) {
             return value > 0 && value <= 100;
-        }
+        },
     },
     progressColor: {
         required: false,
         default: "#C00",
-        type: String
+        type: String,
     },
 
     prominent: {
         required: false,
-        default: false
-    }
+        default: false,
+    },
 });
 
 const propHeight = computed(() => {
-    return ((props.prominent) ? "20px" : "10px");
+    return props.prominent ? "20px" : "10px";
 });
 
 const progressWidth = computed(() => {
     return `${props.value}%`;
-})
-
+});
 </script>
 
 <template>
     <div class="bar">
-        <div 
-            class="bar-progress" 
-            :style="{ width: progressWidth, backgroundColor: progressColor, height: propHeight }">
-        </div>
+        <div
+            class="bar-progress"
+            :style="{
+                width: progressWidth,
+                backgroundColor: progressColor,
+                height: propHeight,
+            }"
+        ></div>
     </div>
 </template>
 
@@ -52,5 +54,4 @@ const progressWidth = computed(() => {
 .bar-progress {
     border-radius: 10px;
 }
-
 </style>

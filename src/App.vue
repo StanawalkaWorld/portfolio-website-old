@@ -1,14 +1,12 @@
 <script setup>
-import NavBar from './components/StructureBlocks/NavBar.vue';
-import SiteFooter from './components/StructureBlocks/SiteFooter.vue';
-import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
-import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
-import SkillsBlock from './components/StructureBlocks/SkillsBlock.vue';
+import NavBar from "./components/StructureBlocks/NavBar.vue";
+import LandingBlock from "./components/StructureBlocks/LandingBlock.vue";
+import ContactBlock from "./components/StructureBlocks/ContactBlock.vue";
+import SkillsBlock from "./components/StructureBlocks/SkillsBlock.vue";
 
 import { ArrowUpIcon } from "@vue-icons/feather";
-import { useSmoothScroll } from './composables/scroll';
+import { useSmoothScroll } from "./composables/scroll";
 const scroll = useSmoothScroll();
-
 </script>
 
 <template>
@@ -21,7 +19,6 @@ const scroll = useSmoothScroll();
         <ContactBlock />
         <div class="separator"></div>
     </div>
-    <SiteFooter />
     <div class="home-button" @click="scroll.scrollTo('.navbar')">
         <ArrowUpIcon />
     </div>
@@ -31,7 +28,8 @@ const scroll = useSmoothScroll();
 * {
     box-sizing: border-box;
 }
-a, a:active {
+a,
+a:active {
     color: $text-color;
     text-decoration: none;
 }
