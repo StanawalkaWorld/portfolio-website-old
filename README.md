@@ -14,7 +14,7 @@ This is the source code for my portfolio website available [Here](https://stanaw
 - **Other dependencies**: [Vue feather icons](https://vue-icons.github.io/), [Flag icons](https://github.com/lipis/flag-icons), [normalize.css](https://necolas.github.io/normalize.css/)
 
 
-## About me 📕
+## About me 👨‍💻
 
 My name is Dawid Barański and I am a self learning web developer. I explored both back- and front-end during my self-taught journey. Most of my experience is centered around the Vue.js framework (Vue 3, Vue router, Pinia, Nuxt.js, Vite, Vitest), but I continue to explore other regions of computer programming.
 
