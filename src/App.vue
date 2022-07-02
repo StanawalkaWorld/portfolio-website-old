@@ -11,14 +11,17 @@ const scroll = useSmoothScroll();
 
 <template>
     <NavBar />
-    <div class="content">
-        <LandingBlock />
-        <div class="separator"></div>
-        <SkillsBlock />
-        <div class="separator"></div>
-        <ContactBlock />
-        <div class="separator"></div>
-    </div>
+    <main class="content">
+        <section>
+            <LandingBlock />
+        </section>
+        <section>
+            <SkillsBlock />
+        </section>
+        <section class="flex-center">
+            <ContactBlock />
+        </section>
+    </main>
     <div class="home-button" @click="scroll.scrollTo('.navbar')">
         <ArrowUpIcon />
     </div>
@@ -50,8 +53,12 @@ body {
     }
 }
 
+section,
+section.flex-center {
+    height: 100vh;
+}
 .separator {
-    margin-bottom: 40vh;
+    height: 40vh;
 }
 
 .home-button {

@@ -11,8 +11,10 @@ const lang = useLanguageStore();
 
 <template>
     <nav class="navbar">
-        <img :src="Logo" alt="✔" class="logo" />
-        <h1 class="logo-caption">Dawid Barański</h1>
+        <div class="logo-container">
+            <img :src="Logo" alt="✔" class="logo" />
+            <h1 class="logo-caption">Dawid Barański</h1>
+        </div>
 
         <div class="navlinklist">
             <a
@@ -92,16 +94,20 @@ const lang = useLanguageStore();
     max-height: 40px;
 }
 .logo-caption {
-    margin: 0 $big-margin 0 0;
+    margin-left: $small-margin;
+
+    @media screen and (min-width: 1024px) {
+        margin-right: $big-margin;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
 
-        * {
-            margin: 0;
-        }
+        // * {
+        //     margin: 0;
+        // }
 
         .navlinklist {
             display: block;
