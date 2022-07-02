@@ -1,6 +1,6 @@
 export const useSmoothScroll = () => {
-    function scrollTo(elem: string): void {
-        document.querySelector(elem)?.scrollIntoView({ behavior: "smooth", block: "center" });
+    function scrollTo(elem: string, position?: ScrollLogicalPosition): void {
+        document.querySelector(elem)?.scrollIntoView({ behavior: "smooth", block: (position || "center") });
     }
 
     return {
