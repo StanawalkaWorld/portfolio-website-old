@@ -3,15 +3,17 @@ import NavBar from "./components/StructureBlocks/NavBar.vue";
 import LandingBlock from "./components/StructureBlocks/LandingBlock.vue";
 import ContactBlock from "./components/StructureBlocks/ContactBlock.vue";
 import SkillsBlock from "./components/StructureBlocks/SkillsBlock.vue";
-
+import { onMounted } from "vue";
 import { ArrowUpIcon } from "@vue-icons/feather";
+
 import { useSmoothScroll } from "./composables/scroll";
+
 const scroll = useSmoothScroll();
 </script>
 
 <template>
     <NavBar />
-    <main class="content">
+    <main class="content" id="mainContent">
         <section>
             <LandingBlock />
         </section>
