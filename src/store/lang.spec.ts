@@ -45,7 +45,7 @@ describe('Language Store', () => {
         const lang = useLanguageStore();
 
         // Test invalid translations
-        expect(lang.translationFor('content', 'about.header')).toBe("<TRANSLATION NOT FOUND>");
+        expect(lang.translationFor('content', 'shop.header')).toBe("<TRANSLATION NOT FOUND>");
         expect(lang.translationFor('sidebar', 'navlink.home')).toBe("<TRANSLATION NOT FOUND>");
     })
 });
