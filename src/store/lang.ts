@@ -8,7 +8,11 @@ type Language = "pl" | "en";
 
 export const useLanguageStore = defineStore("LanguageStore", () => {
     const preferred = usePreferredLanguages();
-    const current_lang: Ref<Language> = ref(preferred.value[0].includes("pl") ? "pl" : "en");
+    const current_lang: Ref<Language> = ref(
+        preferred.value[0].includes("pl") 
+        ? "pl" 
+        : "en"
+    );
 
     function switchLanguage() {
         current_lang.value = current_lang.value == "pl" ? "en" : "pl";
