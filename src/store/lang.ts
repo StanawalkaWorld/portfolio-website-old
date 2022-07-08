@@ -1,11 +1,14 @@
+import { usePreferredLanguages } from '@vueuse/core';
 import { defineStore } from 'pinia';
 import { computed, ref, Ref, unref } from 'vue';
 import Translations from '../assets/Translations.json';
 
 type TextType = "skeleton" | "content";
+type Language = "pl" | "en";
 
 export const useLanguageStore = defineStore("LanguageStore", () => {
-    const current_lang: Ref<"pl" | "en"> = ref("en");
+    const preferred = usePreferredLanguages();
+    const current_lang: Ref<Language> = ref(preferred.value[0].includes("pl") ? "pl" : "en");
 
     function switchLanguage() {
         current_lang.value = current_lang.value == "pl" ? "en" : "pl";
