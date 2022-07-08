@@ -2,9 +2,7 @@
 import TwoColumnContent from "../TwoColumnContent.vue";
 import TitledContent from "../UIElements/TitledContent.vue";
 import ProgressBar from "../UIElements/ProgressBar.vue";
-import { readonly } from "vue";
 import { useLanguageStore } from "../../store/lang";
-import { computed } from "@vue/reactivity";
 
 interface SkillBar {
     name: string;
