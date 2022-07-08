@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="landing-picture.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="362.33705"
+     inkscape:cy="376.96903"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#012d79;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-opacity:1"
+       id="rect839"
+       width="183.88142"
+       height="6.6817379"
+       x="13.059288"
+       y="103.96784"
+       ry="2.4054258" />
+    <rect
+       style="fill:#012d79;fill-opacity:1;stroke-width:0.206749"
+       id="rect841"
+       width="74.568192"
+       height="22.45064"
+       x="67.715904"
+       y="65.481033"
+       ry="4.4041371" />
+    <circle
+       style="fill:#012d79;fill-opacity:1;stroke-width:0.264999"
+       id="path843"
+       cx="105"
+       cy="36.883194"
+       r="20.312483" />
+    <rect
+       style="fill:#012d79;fill-opacity:1;stroke-width:0.206749"
+       id="rect845"
+       width="74.568192"
+       height="22.45064"
+       x="67.715904"
+       y="80.448128"
+       ry="0" />
+  </g>
+</svg>

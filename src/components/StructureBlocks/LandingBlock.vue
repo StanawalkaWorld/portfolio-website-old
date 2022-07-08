@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import TwoColumnContent from "../TwoColumnContent.vue";
+import LandingPicture from "../../assets/landing-picture.svg";
 
 import { useLanguageStore } from "../../store/lang";
 const lang = useLanguageStore();
@@ -8,7 +9,10 @@ const lang = useLanguageStore();
 <template>
     <TwoColumnContent>
         <template #first>
-            <!-- TODO: Place a fitting image -->
+            <img
+                :src="LandingPicture"
+                alt="Simple drawing of a man looking at a laptop."
+            />
         </template>
         <template #second>
             <h1 class="prominent-header text-left">
