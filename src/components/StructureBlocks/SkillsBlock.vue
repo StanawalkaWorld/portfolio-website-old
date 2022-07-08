@@ -62,7 +62,7 @@ skills.sort((a, b) => b.value - a.value);
                 <div>
                     <TitledContent
                         :title="lang.translationFor('content', 'skills.header')"
-                        header-align="right"
+                        header-align="left"
                         paragraph-align="justify"
                     >
                         <div id="skills"></div>

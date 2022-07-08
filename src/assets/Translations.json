@@ -22,25 +22,13 @@
         }
     },
     "content": {
-        "testing.header": {
-            "en": "Website currently under construction.",
-            "pl": "Strona aktualnie w budowie."
-        },
-        "testing.paragraph": {
-            "en": "You can contact me at:",
-            "pl": "Skontaktuj się ze mną pod adresem e-mail:"
-        },
         "landing.mainheader": {
-            "en": "A readable and lightweight website.",
-            "pl": "Przejrzysta i lekka strona internetowa"
+            "en": "Hi! My name is Dawid.",
+            "pl": "Witam! Mam na imię Dawid."
         },
         "landing.paragraph": {
-            "en": "Hi! my name is Dawid and I am a very passionate web developer! My main goal is to deliver websites that are readable and get to the point.",
-            "pl": "Witaj! Mam na imię Dawid i pasjonuje się tworzeniem stron internetowych! Moim głównym celem jest dostarczanie przejrzystych witryn, które w prosty sposób przekazują swoją treść."
-        },
-        "goal.paragraph": {
-            "en": "One of the most frustrating parts of the modern web is the performence, or more precisely, the lack of it. Many old computers struggle to load popular webpages, let alone browse them. This is why I decided to keep my websites simple, by reducing the amount of frameworks I use and still keep them responsive.",
-            "pl": "Dzisiejsze strony internetowe celują w zaawansowany design, który negatywnie wpływa na wydajność strony. Problem ten nie tyczy się tylko starych komputerów, ale i budżetowych urządzeń mobilnych, w tym smartfony, tablety i laptopy."
+            "en": "I am a very passionate web developer looking for a job!",
+            "pl": "Pasjonuje się tworzeniem stron internetowych oraz poszukuje pracy!"
         },
         "contact.context": {
             "en": "Contact me here:",
