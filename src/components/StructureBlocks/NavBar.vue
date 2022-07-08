@@ -1,5 +1,5 @@
 <script setup>
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/Logo.webp";
 import LanguageButton from "../UIElements/LanguageButton.vue";
 
 import { useSmoothScroll } from "../../composables/scroll";
