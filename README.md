@@ -11,7 +11,7 @@ This is the source code for my portfolio website available [Here](https://stanaw
 - **Build tool**: [⚡Vite](https://vitejs.dev)  
 - **CSS Preprocessor**: [Sass](https://sass-lang.com/)
 - **Testing**: [Vitest](https://vitest.dev/), [c8](https://github.com/bcoe/c8)
-- **Other dependencies**: [Vue feather icons](https://vue-icons.github.io/), [Flag icons](https://github.com/lipis/flag-icons), [normalize.css](https://necolas.github.io/normalize.css/)
+- **Other dependencies**: [Vue feather icons](https://vue-icons.github.io/), [Flag icons](https://github.com/lipis/flag-icons), [normalize.css](https://necolas.github.io/normalize.css/), [VueUse](https://vueuse.org/)
 
 
 ## About me 👨‍💻
