@@ -13,7 +13,7 @@ const lang = useLanguageStore();
     <nav class="navbar">
         <div class="logo-container">
             <img :src="Logo" alt="✔" class="logo" />
-            <h1 class="logo-caption">Dawid Barański</h1>
+            <div class="logo-caption">Dawid Barański</div>
         </div>
 
         <div class="navlinklist">
@@ -52,7 +52,6 @@ const lang = useLanguageStore();
 
 <style lang="scss" scoped>
 .navbar {
-    padding: $standard-margin;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +72,6 @@ const lang = useLanguageStore();
             display: block;
             margin-right: $big-margin;
             padding: $standard-margin;
-            border-radius: $small-margin;
             transition: $standard-transition_length background;
 
             font-size: 1.2em;
@@ -86,8 +84,9 @@ const lang = useLanguageStore();
 
     .langbutton {
         position: fixed;
-        top: 25px;
-        right: 25px;
+        bottom: 100px;
+        right: 20px;
+        margin: 0;
     }
 }
 .logo {
@@ -95,6 +94,8 @@ const lang = useLanguageStore();
 }
 .logo-caption {
     margin-left: $small-margin;
+    font-size: 2.5em;
+    font-weight: bold;
 
     @media screen and (min-width: 1024px) {
         margin-right: $big-margin;
@@ -120,18 +121,6 @@ const lang = useLanguageStore();
                 border-radius: 0;
                 text-align: center;
             }
-        }
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .navbar {
-        .langbutton {
-            top: unset;
-            bottom: 100px;
-            right: 20px;
-
-            padding: $standard-margin;
         }
     }
 }
