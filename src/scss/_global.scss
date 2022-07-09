@@ -106,12 +106,12 @@ $alignements: left, center, right, justify;
 
 // Content text
 .content-header {
-    color: $text-color;
+    color: $dimmed-color;
 
     @include header2();
 }
 .content-paragraph {
-    color: $text-color;
+    color: $dimmed-color;
 
     @include content_paragraph();
 }

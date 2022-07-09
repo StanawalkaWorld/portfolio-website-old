@@ -18,9 +18,15 @@ const lang = useLanguageStore();
             <h1 class="prominent-header text-left">
                 {{ lang.translationFor("content", "landing.mainheader") }}
             </h1>
-            <p class="prominent-paragraph text-justify">
+            <p class="content-paragraph text-justify">
                 {{ lang.translationFor("content", "landing.paragraph") }}
             </p>
         </template>
     </TwoColumnContent>
 </template>
+
+<style lang="scss" scoped>
+.content-paragraph {
+    color: $dimmed-color;
+}
+</style>
