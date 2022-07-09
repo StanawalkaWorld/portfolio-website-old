@@ -20,10 +20,9 @@
         width: 50%;
         padding: $small-margin;
     }
-
 }
 @media screen and (max-width: 1024px) {
-    .two-column-container{
+    .two-column-container {
         flex-direction: column;
 
         .two-column {

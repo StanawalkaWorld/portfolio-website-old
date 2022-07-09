@@ -22,25 +22,13 @@
         }
     },
     "content": {
-        "testing.header": {
-            "en": "Website currently under construction.",
-            "pl": "Strona aktualnie w budowie."
-        },
-        "testing.paragraph": {
-            "en": "You can contact me at:",
-            "pl": "Skontaktuj się ze mną pod adresem e-mail:"
-        },
         "landing.mainheader": {
-            "en": "A readable and lightweight website.",
-            "pl": "Przejrzysta i lekka strona internetowa"
+            "en": "Hi! My name is Dawid.",
+            "pl": "Witam! Mam na imię Dawid."
         },
         "landing.paragraph": {
-            "en": "Hi! my name is Dawid and I am a very passionate web developer! My main goal is to deliver websites that are readable and get to the point.",
-            "pl": "Witaj! Mam na imię Dawid i pasjonuje się tworzeniem stron internetowych! Moim głównym celem jest dostarczanie przejrzystych witryn, które w prosty sposób przekazują swoją treść."
-        },
-        "goal.paragraph": {
-            "en": "One of the most frustrating parts of the modern web is the performence, or more precisely, the lack of it. Many old computers struggle to load popular webpages, let alone browse them. This is why I decided to keep my websites simple, by reducing the amount of frameworks I use and still keep them responsive.",
-            "pl": "Dzisiejsze strony internetowe celują w zaawansowany design, który negatywnie wpływa na wydajność strony. Problem ten nie tyczy się tylko starych komputerów, ale i budżetowych urządzeń mobilnych, w tym smartfony, tablety i laptopy."
+            "en": "I am a very passionate front-end developer looking for a job!",
+            "pl": "Pasjonuję się tworzeniem stron internetowych oraz poszukuję pracy!"
         },
         "contact.context": {
             "en": "Contact me here:",
@@ -51,8 +39,8 @@
             "pl": "Moje umiejętności."
         },
         "skills.paragraph": {
-            "en": "Here is the list of what I learned and plan to improve on in the near future. Of course, this isn't my final skillset. I am open to any new frameworks or languages I would need to learn in my next job!",
-            "pl": "Oto lista moich umiejętności w zakresie web dev'u. jestem otwarty na wszelkie nowe rozwiązania i chętnie poszerzę swoją wiedze o nowe frameworki."
+            "en": "Here is the list of what I learned and plan to improve on in the near future. Of course, this isn't my final skillset. I am open to any new frameworks or languages to learn for my new job!",
+            "pl": "Oto lista moich umiejętności w zakresie web dev'u. Jestem otwarty na wszelkie nowe doświadczenia, dlatego chętnie poszerzę swoją wiedze o nowe języki i frameworki!"
         }
     }
 }

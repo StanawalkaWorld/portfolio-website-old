@@ -1,27 +1,30 @@
 <script setup>
-import NavBar from './components/StructureBlocks/NavBar.vue';
-import SiteFooter from './components/StructureBlocks/SiteFooter.vue';
-import LandingBlock from './components/StructureBlocks/LandingBlock.vue';
-import ContactBlock from './components/StructureBlocks/ContactBlock.vue';
-import SkillsBlock from './components/StructureBlocks/SkillsBlock.vue';
-
+import NavBar from "./components/StructureBlocks/NavBar.vue";
+import LandingBlock from "./components/StructureBlocks/LandingBlock.vue";
+import ContactBlock from "./components/StructureBlocks/ContactBlock.vue";
+import SkillsBlock from "./components/StructureBlocks/SkillsBlock.vue";
+import { onMounted } from "vue";
 import { ArrowUpIcon } from "@vue-icons/feather";
-import { useSmoothScroll } from './composables/scroll';
-const scroll = useSmoothScroll();
 
+import { useSmoothScroll } from "./composables/scroll";
+
+const scroll = useSmoothScroll();
 </script>
 
 <template>
     <NavBar />
-    <div class="content">
-        <LandingBlock />
-        <div class="separator"></div>
-        <SkillsBlock />
-        <div class="separator"></div>
-        <ContactBlock />
-        <div class="separator"></div>
-    </div>
-    <SiteFooter />
+    <main class="content" id="mainContent">
+        <div class="hspacer"></div>
+        <section>
+            <LandingBlock />
+        </section>
+        <section>
+            <SkillsBlock />
+        </section>
+        <section class="flex-center">
+            <ContactBlock />
+        </section>
+    </main>
     <div class="home-button" @click="scroll.scrollTo('.navbar')">
         <ArrowUpIcon />
     </div>
@@ -31,7 +34,8 @@ const scroll = useSmoothScroll();
 * {
     box-sizing: border-box;
 }
-a, a:active {
+a,
+a:active {
     color: $text-color;
     text-decoration: none;
 }
@@ -52,8 +56,12 @@ body {
     }
 }
 
-.separator {
-    margin-bottom: 40vh;
+section,
+section.flex-center {
+    height: 100vh;
+}
+.hspacer {
+    height: 5vh;
 }
 
 .home-button {
