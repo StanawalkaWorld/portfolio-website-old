@@ -11,7 +11,8 @@ const lang = useLanguageStore();
         <template #first>
             <img
                 :src="LandingPicture"
-                alt="Simple drawing of a man looking at a laptop."
+                alt="Simple drawing of a man looking at a PC monitor."
+                class="landing-picture"
             />
         </template>
         <template #second>
@@ -28,5 +29,13 @@ const lang = useLanguageStore();
 <style lang="scss" scoped>
 .content-paragraph {
     color: $dimmed-color;
+}
+
+.landing-picture {
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 </style>
