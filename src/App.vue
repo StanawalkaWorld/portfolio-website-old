@@ -14,6 +14,7 @@ const scroll = useSmoothScroll();
 <template>
     <NavBar />
     <main class="content" id="mainContent">
+        <div class="hspacer"></div>
         <section>
             <LandingBlock />
         </section>
@@ -59,8 +60,8 @@ section,
 section.flex-center {
     height: 100vh;
 }
-.separator {
-    height: 40vh;
+.hspacer {
+    height: 5vh;
 }
 
 .home-button {
